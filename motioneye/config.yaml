@@ -1,15 +1,14 @@
 ---
 name: motionEye
-version: version: "1.0.0"
+version: "1.0.0"
 slug: motioneye
 description: Simple, elegant and feature-rich CCTV/NVR for your cameras
-url: https://github.com/hassio-addons/addon-motioneye
-codenotary: codenotary@frenck.dev
+url: https://github.com/Miksang/custom-motioneye-addon
 ingress: true
 ingress_port: 0
 ingress_stream: true
 panel_icon: mdi:cctv
-homeassistant: 0.92.0b2
+homeassistant: 2025.8.0
 arch:
   - aarch64
   - amd64
