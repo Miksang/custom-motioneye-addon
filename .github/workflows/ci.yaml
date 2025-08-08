@@ -26,13 +26,12 @@ jobs:
         uses: step-security/change-string-case-action@v6
         with:
           string: ${{ github.repository_owner }}
-          operation: lower
 
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ steps.lowercase_owner.outputs.changed-string }}/motioneye/${{ matrix.architecture }}
+          images: ${{ steps.lowercase_owner.outputs.lowercase }}/motioneye/${{ matrix.architecture }}
           tags: |
             type=ref,event=branch
             type=ref,event=pr
