@@ -30,7 +30,11 @@ discovery:
 host_network: true
 apparmor: false
 video: true
-privileged: true
+privileged:
+  - DAC_READ_SEARCH
+  - SYS_ADMIN
+  - SYS_RAWIO
+  - SYS_MODULE
 map:
   - media:rw
   - share:rw
