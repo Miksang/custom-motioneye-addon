@@ -18,7 +18,9 @@ arch:
   - i386
 init: false
 devices:
-  - /dev/video*:/dev/video*:rwm
+  - /dev/video0:/dev/video0
+  - /dev/video1:/dev/video1
+  - /dev/media0:/dev/media0
 ports:
   80/tcp: null
 ports_description:
