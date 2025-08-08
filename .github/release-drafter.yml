@@ -1,3 +1,4 @@
+---
 name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
@@ -13,7 +14,7 @@ categories:
   - title: 'Maintenance'
     label: 'maintenance'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-change-title-escapes: '\<*_&' # You can add additional characters to be escaped here 
+change-title-escapes: '\<*_&' # You can add additional characters to be escaped here
 version-resolver:
   major:
     labels:
