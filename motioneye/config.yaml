@@ -17,6 +17,8 @@ arch:
   - armv7
   - i386
 init: false
+devices:
+  - /dev/video*:/dev/video*:rwm
 ports:
   80/tcp: null
 ports_description:
